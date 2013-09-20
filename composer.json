@@ -1,7 +1,8 @@
 {
     "require": {
-        "zendframework/zendframework": "2.*",
-        "soflomo/prototype": "0.*",
-        "soflomo/common": "0.*"
+        "zendframework/zendframework": "~2.2",
+
+        "soflomo/prototype": "~0.1",
+        "soflomo/common": "~0.5"
     }
 }
