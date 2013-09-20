@@ -1,5 +1,8 @@
 <?php
-return array(
+
+use Zend\Stdlib\ArrayUtils;
+
+$config = array(
     'modules' => array(
         'Application',
         'Soflomo\Prototype',
@@ -16,3 +19,11 @@ return array(
         ),
     ),
 );
+
+$local = __DIR__ . '/application.config.local.php';
+if (is_readable($local)) {
+    $config = ArrayUtils::merge($config, require($local));
+}
+
+return $config;
+
