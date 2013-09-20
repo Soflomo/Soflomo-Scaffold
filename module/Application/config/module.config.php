@@ -15,10 +15,4 @@ return array(
             __DIR__ . '/../view',
         ),
     ),
-
-    'view_helpers' => array(
-        'invokables' => array(
-            'sidebarNavigation' => 'Application\View\Helper\SidebarNavigation',
-        ),
-    ),
 );
