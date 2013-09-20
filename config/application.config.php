@@ -2,9 +2,9 @@
 return array(
     'modules' => array(
         'Application',
+        'Soflomo\Common',
         'Soflomo\Prototype',
         'Mockup',
-        'Soflomo\Common',
     ),
     'module_listener_options' => array(
         'config_glob_paths'    => array(
