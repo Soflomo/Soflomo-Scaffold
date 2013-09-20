@@ -1,6 +1,6 @@
 <?php
 
-namespace Mockup;
+namespace Template;
 
 class Module
 {
