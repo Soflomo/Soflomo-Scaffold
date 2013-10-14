@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="--Project Name--" basedir="." default="update">
+<project name="Machinefabriek Sas van Gent" basedir="." default="update">
 
     <target name="composer">
         <echo msg="Running Composer install..." />
         <composer command="install"/>
     </target>
 
-    <target name="doctrine-check">
+    <target name="doctrine-schema">
         <echo msg="Checking DB schema..." />
         <exec command="vendor/bin/doctrine-module orm:validate-schema" logoutput="yes"/>
     </target>
 
-    <target name="doctrine-update">
-        <echo msg="Updating DB schema..." />
-        <exec command="vendor/bin/doctrine-module orm:schema-tool:update --force" logoutput="yes"/>
+    <target name="doctrine-proxies" depends="doctrine-schema">
+        <echo msg="Checking proxies..." />
+        <exec command="vendor/bin/doctrine-module orm:generate-proxies" logoutput="yes"/>
     </target>
 
     <target name="bower">
@@ -26,6 +26,6 @@
         <exec command="compass compile" logoutput="yes"/>
     </target>
 
-    <target name="update" depends="composer, bower, compass" />
+    <target name="update" depends="composer, doctrine-proxies, bower, compass" />
 
 </project>
