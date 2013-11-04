@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Machinefabriek Sas van Gent" basedir="." default="update">
+<project name="--Project Name--" basedir="." default="update">
 
     <target name="composer">
         <echo msg="Running Composer install..." />
