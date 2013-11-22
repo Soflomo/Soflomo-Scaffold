@@ -1,5 +1,5 @@
 {
-  "name": "--Project Name--",
+  "name": "project-name",
   "version": "0.1.0",
   "main": "./public/styles/css/styles.css",
   "dependencies": {
