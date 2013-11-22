@@ -1,4 +1,8 @@
 {
+    "name": "soflomo/scaffold",
+    "description": "Soflomo scaffold project for fast bootstrapping ZF2 aplications",
+    "license": "BSD-3-Clause",
+    "type": "project",
     "require": {
         "zendframework/zendframework": "~2.2",
 
