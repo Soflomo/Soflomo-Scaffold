@@ -23,8 +23,10 @@ Installation
 You can install the scaffold by using composer. Load the composer.phar file and execute the following line:
 
     php composer.phar create-project soflomo/scaffold my-dir
+    bower install
+    compass compile
 
-This will install the scaffold in "my-dir". If you have a repository available for your new project, add this as remote and start coding.
+This will install the scaffold in "my-dir", load all dependencies from bower and runs the compilation step from compass. If you have a repository available for your new project, add this as remote and start coding.
 
 Usage
 ---
