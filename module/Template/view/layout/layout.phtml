@@ -17,29 +17,25 @@
 
 <body>
 
-    <div class="container cf">
-        <div class="inner-container">
+    <header class="row">
+        <h1 class="logo large-4 columns">
+            <a href="<?= $this->url('home')?>" title="--Project Name--" rel="start">--Project Name--</a>
+        </h1>
 
-            <header class="header cf">
+        <nav class="nav-main large-8 columns" role="navigation">
+            <?= $this->navigation('default')->menu()
+                ->setUlClass('right horizontal')
+                ->setMaxDepth(0)
+                ->setRenderInvisible(false)
+            ?>
+        </nav>
+    </header>
 
-                    <h1 class="logo">
-                        <a href="<?= $this->url('home')?>" title="--Project Name--" rel="start">--Project Name--</a>
-                    </h1>
-
-                    <nav class="nav-main" role="navigation">
-                        <?= $this->navigation('default')->menu()->setUlClass('horizontal')
-                                                        ->setMaxDepth(0)
-                                                        ->setRenderInvisible(false)?>
-                    </nav>
-
-            </header>
-
-            <section role="main" class="main-content">
-                <?= $this->content ?>
-            </section>
-
+    <section role="main" class="main-content row">
+        <div class="large-12 columns">
+            <?= $this->content ?>
         </div>
-    </div>
+    </section>
 
     <?= $this->inlineScript()
                     ->setAllowArbitraryAttributes(true)
