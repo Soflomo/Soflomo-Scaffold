@@ -1,6 +1,5 @@
 {
     "name": "project-name",
-    "version": "0.0.1",
     "devDependencies": {
         "node-sass": "~0.7.0",
         "grunt": "~0.4.1",
