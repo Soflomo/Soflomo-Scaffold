@@ -39,9 +39,8 @@
     </section>
 
     <?= $this->inlineScript()
-                    ->setAllowArbitraryAttributes(true)
-                    ->prependFile('https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
-                    ->appendFile($this->basePath() .'/scripts/main.js?'. $this->version())
-                    ?>
+        ->setAllowArbitraryAttributes(true)
+        //->appendFile($this->basePath() .'/scripts/main.js?'. $this->version())
+    ?>
 </body>
 </html>
