@@ -4,6 +4,8 @@
   "main": "./public/styles/css/styles.css",
   "dependencies": {
     "normalize.scss": "2.1.3",
-    "modernizr": "2.6.2"
-  }
+    "modernizr": "2.6.2",
+    "foundation": "zurb/bower-foundation"
+  },
+  "private": true
 }

@@ -3,48 +3,44 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <?= $this->headTitle('--Project Name--')->setSeparator(' &middot; ')->setAutoEscape(false) ?>
+    <?= $this->headTitle('--Project Name--')->setSeparator(' · ') ?>
 
-        <?= $this->headMeta()->appendName('copyright', '--Project Name-- 2013')
-                             ->appendName('generator', 'Ensemble CMF - Soflomo.com')
-                             ->appendName('viewport', 'initial-scale=1.0 maximum-scale=1.0')
-                             ->appendName('apple-mobile-web-app-capable', 'yes')
-                             ?>
+    <?= $this->headMeta()
+        ->appendName('copyright', '--Project Name-- 2013')
+        ->appendName('generator', 'Ensemble CMF - Soflomo.com')
+        ->appendName('viewport', 'initial-scale=1.0 maximum-scale=1.0')
+        ->appendName('apple-mobile-web-app-capable', 'yes')
+    ?>
 
-        <?= $this->headLink()->appendStylesheet($this->basePath() . '/styles/css/styles.css?' . $this->version())?>
-        <?= $this->headScript()->appendFile($this->basePath() . '/components/modernizr/modernizr.js') ?>
+    <?= $this->headLink()->appendStylesheet($this->basePath() . '/styles/css/styles.css?' . $this->version()) ?>
+    <?= $this->headScript()->appendFile($this->basePath() . '/bower_components/modernizr/modernizr.js') ?>
 </head>
 
 <body>
 
-    <div class="container cf">
-        <div class="inner-container">
+    <header class="row">
+        <h1 class="logo large-4 columns">
+            <a href="<?= $this->url('home')?>" title="--Project Name--" rel="start">--Project Name--</a>
+        </h1>
 
-            <header class="header cf">
+        <nav class="nav-main large-8 columns" role="navigation">
+            <?= $this->navigation('default')->menu()
+                ->setUlClass('right horizontal')
+                ->setMaxDepth(0)
+                ->setRenderInvisible(false)
+            ?>
+        </nav>
+    </header>
 
-                    <h1 class="logo">
-                        <a href="<?= $this->url('home')?>" title="--Project Name--" rel="start">--Project Name--</a>
-                    </h1>
-
-                    <nav class="nav-main" role="navigation">
-                        <?= $this->navigation('default')->menu()->setUlClass('horizontal')
-                                                        ->setMaxDepth(0)
-                                                        ->setRenderInvisible(false)?>
-                    </nav>
-
-            </header>
-
-            <section role="main" class="main-content">
-                <?= $this->content ?>
-            </section>
-
+    <section role="main" class="main-content row">
+        <div class="large-12 columns">
+            <?= $this->content ?>
         </div>
-    </div>
+    </section>
 
     <?= $this->inlineScript()
-                    ->setAllowArbitraryAttributes(true)
-                    ->prependFile('https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js')
-                    ->appendFile($this->basePath() .'/scripts/main.js?'. $this->version())
-                    ?>
+        ->setAllowArbitraryAttributes(true)
+        //->appendFile($this->basePath() .'/scripts/main.js?'. $this->version())
+    ?>
 </body>
 </html>
