@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <?= $this->headTitle('--Project Name--')->setSeparator(' &middot; ')->setAutoEscape(false) ?>
 
-        <?= $this->headMeta()->appendName('copyright', '--Project Name-- 2013')
-                             ->appendName('generator', 'Ensemble CMF - Soflomo.com')
-                             ->appendName('viewport', 'initial-scale=1.0 maximum-scale=1.0')
-                             ->appendName('apple-mobile-web-app-capable', 'yes')
-                             ?>
+        <?= $this->headMeta()
+            ->appendName('copyright', '--Project Name-- 2013')
+            ->appendName('generator', 'Ensemble CMF - Soflomo.com')
+            ->appendName('viewport', 'initial-scale=1.0 maximum-scale=1.0')
+            ->appendName('apple-mobile-web-app-capable', 'yes')
+        ?>
 
         <?= $this->headLink()->appendStylesheet($this->basePath() . '/styles/css/styles.css?' . $this->version())?>
         <?= $this->headScript()->appendFile($this->basePath() . '/components/modernizr/modernizr.js') ?>
