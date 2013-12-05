@@ -10,11 +10,20 @@ module.exports = function(grunt) {
                 files: {
                     'public/styles/css/styles.css': 'public/styles/scss/styles.scss'
                 }
+            },
+            dev: {
+                options: {
+                    outputStyle: 'expanded',
+                    sourceComments: 'normal'
+                },
+                files: {
+                    'public/styles/css/styles.css': 'public/styles/scss/styles.scss'
+                }
             }
         },
 
         watch: {
-            grunt: { files: ['Gruntfile.js'] },
+            grunt: { files: ['gruntfile.js'] },
 
             sass: {
                 files: 'public/styles/scss/**/*.scss',
@@ -38,6 +47,7 @@ module.exports = function(grunt) {
                     'public/styles/css/*.css',
                     'public/images/**/*.jpg',
                     'public/images/**/*.png',
+                    'public/images/**/*.svg',
                     'public/scripts/**/*.js',
                     'module/**/*.phtml',
                     'module/**/*.php',
@@ -54,6 +64,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
 
-    grunt.registerTask('build', ['sass', "uglify"]);
-    grunt.registerTask('default', ['browser_sync', 'build', 'watch']);
+    grunt.registerTask('build', ['sass:dist', 'uglify']);
+    grunt.registerTask('default', ['browser_sync', 'sass:dev', 'watch']);
 }
