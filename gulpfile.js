@@ -35,7 +35,8 @@ gulp.task('browser-sync', function() {
     ], {
         proxy: 'drmonk.dev',
         ghostMode: false,
-        notify: false
+        notify: false,
+        open: false
     });
 });
 
