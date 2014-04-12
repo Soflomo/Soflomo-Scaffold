@@ -46,9 +46,9 @@ gulp.task('build', function(){
         .pipe(prefix('last 2 versions', "ie 9"))
         .pipe(gulp.dest('public/styles/css'));
 
-        gulp.src('public/scripts/*.js')
-            .pipe(uglify())
-            .pipe(gulp.dest('public/scripts/dist'));
+    gulp.src('public/scripts/*.js')
+        .pipe(uglify())
+        .pipe(gulp.dest('public/scripts/dist'));
 });
 
 gulp.task('default', ['sass', 'browser-sync'], function () {
