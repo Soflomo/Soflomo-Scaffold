@@ -29,7 +29,7 @@ gulp.task('browser-sync', function() {
         'public/images/**/*.jpg',
         'public/images/**/*.png',
         'public/images/**/*.svg',
-        'public/scripts/**/*.js',
+        'public/scripts/dist/**/*.js',
         'module/**/*.phtml',
         'module/**/*.php'
     ], {
