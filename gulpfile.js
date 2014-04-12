@@ -10,7 +10,7 @@ var notify       = require("gulp-notify");
 gulp.task('sass', function(){
     gulp.src(['public/styles/scss/styles.scss','public/styles/scss/ie.scss'])
         .pipe(plumber())
-        .pipe(sass({sourceComments: 'map'}))
+        .pipe(sass())
         .pipe(prefix('last 2 versions', "ie 9"))
         .pipe(gulp.dest('public/styles/css'));
 });
