@@ -33,7 +33,7 @@ gulp.task('browser-sync', function() {
         'module/**/*.phtml',
         'module/**/*.php'
     ], {
-        proxy: 'drmonk.dev',
+        proxy: 'project-name.dev',
         ghostMode: false,
         notify: false,
         open: false
