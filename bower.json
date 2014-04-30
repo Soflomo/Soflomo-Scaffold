@@ -1,11 +1,16 @@
 {
-  "name": "project-name",
-  "version": "0.1.0",
-  "main": "./public/styles/css/styles.css",
-  "dependencies": {
-    "normalize.scss": "2.1.3",
-    "modernizr": "2.6.2",
-    "foundation": "zurb/bower-foundation"
-  },
-  "private": true
+    "name": "ProjectName",
+    "version": "0.1.0",
+    "main": "./public/styles/css/styles.css",
+    "dependencies": {
+        "normalize.scss": "~2.1.3",
+        "modernizr": "~2.8.0",
+        "foundation": "~5.2.2",
+        "soflomo-base-styles": "git://github.com/Soflomo/soflomo-base-styles.git",
+        "ensemble-assets": "git://github.com/jurreantonisse/ensemble-assets.git",
+        "dropzone": "~3.6.2",
+        "requirejs": "~2.1.11",
+        "bootstrap-datetimepicker": "2403664c00e5a7d5a9c21538de295934f747ee4f",
+        "redactor-amd": "git@bitbucket.org:soflomo/redactor-amd.git#1.1.0"
+    }
 }
