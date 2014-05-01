@@ -1,6 +1,6 @@
 {
     "name": "ProjectName",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "main": "./public/styles/css/styles.css",
     "dependencies": {
         "normalize.scss": "~2.1.3",
