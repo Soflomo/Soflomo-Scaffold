@@ -10,7 +10,6 @@
         "ensemble-assets": "git://github.com/jurreantonisse/ensemble-assets.git",
         "dropzone": "~3.6.2",
         "requirejs": "~2.1.11",
-        "bootstrap-datetimepicker": "2403664c00e5a7d5a9c21538de295934f747ee4f",
         "redactor-amd": "git@bitbucket.org:soflomo/redactor-amd.git#1.1.0"
     }
 }
