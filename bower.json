@@ -9,6 +9,7 @@
         "soflomo-base-styles": "git://github.com/Soflomo/soflomo-base-styles.git",
         "ensemble-assets": "git://github.com/jurreantonisse/ensemble-assets.git",
         "dropzone": "~3.6.2",
-        "requirejs": "~2.1.11"
+        "requirejs": "~2.1.11",
+        "redactor-amd": "git@bitbucket.org:soflomo/redactor-amd.git#1.1.0"
     }
 }
