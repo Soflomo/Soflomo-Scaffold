@@ -1,5 +1,6 @@
 {
     "name": "project-name",
+    "private": true,
     "devDependencies": {
         "gulp": "~3.6.0",
         "gulp-sass": "~0.7.1",
@@ -10,9 +11,5 @@
         "gulp-notify": "~1.2.5",
         "gulp-autoprefixer": "~0.0.7",
         "gulp-uglify": "~0.2.1"
-    },
-    "repository": {
-    "type": "git",
-    "url": "http://github.com/soflomo/project-name.git"
     }
 }
