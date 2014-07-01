@@ -23,7 +23,7 @@
         "zendframework/zendframework": "~2.2",
 
         "soflomo/prototype": "~0.1",
-        "soflomo/common": "~0.5",
+        "soflomo/common": "~0.7",
         "soflomo/local-script": "~0.1"
     }
 }
