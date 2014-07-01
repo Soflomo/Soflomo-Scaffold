@@ -16,7 +16,7 @@ The scaffold is based on the following libraries:
  5. [normalize.scss](https://github.com/necolas/normalize.css/): to normalize styles across different browsers
  6. [Modenizr](https://github.com/Modernizr/Modernizr): to enable progressive enhancements across browsers
  7. [Compass](https://github.com/chriseppstein/compass): to parse SASS files into CSS
- 
+
 Installation
 ---
 
@@ -24,7 +24,8 @@ You can install the scaffold by using composer. Load the composer.phar file and 
 
     php composer.phar create-project soflomo/scaffold my-dir
     bower install
-    compass compile
+    npm install
+    gulp build
 
 This will install the scaffold in "my-dir", load all dependencies from bower and runs the compilation step from compass. If you have a repository available for your new project, add this as remote and start coding.
 
