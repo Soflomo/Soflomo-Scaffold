@@ -2,37 +2,40 @@
 @charset "UTF-8";
 
 // Behold, here are all the Foundation components.
-@import
-  "public/bower_components/foundation/scss/foundation/components/accordion",
-  "public/bower_components/foundation/scss/foundation/components/alert-boxes",
-  "public/bower_components/foundation/scss/foundation/components/block-grid",
-  "public/bower_components/foundation/scss/foundation/components/breadcrumbs",
-  "public/bower_components/foundation/scss/foundation/components/button-groups",
-  "public/bower_components/foundation/scss/foundation/components/buttons",
-  "public/bower_components/foundation/scss/foundation/components/clearing",
-  "public/bower_components/foundation/scss/foundation/components/dropdown",
-  "public/bower_components/foundation/scss/foundation/components/dropdown-buttons",
-  "public/bower_components/foundation/scss/foundation/components/flex-video",
-  "public/bower_components/foundation/scss/foundation/components/forms",
-  "public/bower_components/foundation/scss/foundation/components/grid",
-  "public/bower_components/foundation/scss/foundation/components/inline-lists",
-  "public/bower_components/foundation/scss/foundation/components/joyride",
-  "public/bower_components/foundation/scss/foundation/components/keystrokes",
-  "public/bower_components/foundation/scss/foundation/components/labels",
-  "public/bower_components/foundation/scss/foundation/components/magellan",
-  "public/bower_components/foundation/scss/foundation/components/orbit",
-  "public/bower_components/foundation/scss/foundation/components/pagination",
-  "public/bower_components/foundation/scss/foundation/components/panels",
-  "public/bower_components/foundation/scss/foundation/components/pricing-tables",
-  "public/bower_components/foundation/scss/foundation/components/progress-bars",
-  "public/bower_components/foundation/scss/foundation/components/reveal",
-  "public/bower_components/foundation/scss/foundation/components/side-nav",
-  "public/bower_components/foundation/scss/foundation/components/split-buttons",
-  "public/bower_components/foundation/scss/foundation/components/sub-nav",
-  "public/bower_components/foundation/scss/foundation/components/switch",
-  "public/bower_components/foundation/scss/foundation/components/tables",
-  "public/bower_components/foundation/scss/foundation/components/tabs",
-  "public/bower_components/foundation/scss/foundation/components/thumbs",
-  "public/bower_components/foundation/scss/foundation/components/tooltips",
-  "public/bower_components/foundation/scss/foundation/components/offcanvas",
-  "public/bower_components/foundation/scss/foundation/components/visibility";
+@import "public/bower_components/foundation/scss/foundation/components/grid";
+// @import "public/bower_components/foundation/scss/foundation/components/accordion";
+// @import "public/bower_components/foundation/scss/foundation/components/alert-boxes";
+@import "public/bower_components/foundation/scss/foundation/components/block-grid";
+// @import "public/bower_components/foundation/scss/foundation/components/breadcrumbs";
+// @import "public/bower_components/foundation/scss/foundation/components/button-groups";
+// @import "public/bower_components/foundation/scss/foundation/components/buttons";
+@import "public/bower_components/foundation/scss/foundation/components/clearing";
+// @import "public/bower_components/foundation/scss/foundation/components/dropdown";
+// @import "public/bower_components/foundation/scss/foundation/components/dropdown-buttons";
+@import "public/bower_components/foundation/scss/foundation/components/flex-video";
+@import "public/bower_components/foundation/scss/foundation/components/forms";
+// @import "public/bower_components/foundation/scss/foundation/components/icon-bar";
+@import "public/bower_components/foundation/scss/foundation/components/inline-lists";
+// @import "public/bower_components/foundation/scss/foundation/components/joyride";
+// @import "public/bower_components/foundation/scss/foundation/components/keystrokes";
+// @import "public/bower_components/foundation/scss/foundation/components/labels";
+// @import "public/bower_components/foundation/scss/foundation/components/magellan";
+// @import "public/bower_components/foundation/scss/foundation/components/orbit";
+@import "public/bower_components/foundation/scss/foundation/components/pagination";
+// @import "public/bower_components/foundation/scss/foundation/components/panels";
+// @import "public/bower_components/foundation/scss/foundation/components/pricing-tables";
+// @import "public/bower_components/foundation/scss/foundation/components/progress-bars";
+// @import "public/bower_components/foundation/scss/foundation/components/range-slider";
+@import "public/bower_components/foundation/scss/foundation/components/reveal";
+// @import "public/bower_components/foundation/scss/foundation/components/side-nav";
+// @import "public/bower_components/foundation/scss/foundation/components/split-buttons";
+@import "public/bower_components/foundation/scss/foundation/components/sub-nav";
+// @import "public/bower_components/foundation/scss/foundation/components/switches";
+// @import "public/bower_components/foundation/scss/foundation/components/tables";
+// @import "public/bower_components/foundation/scss/foundation/components/tabs";
+// @import "public/bower_components/foundation/scss/foundation/components/thumbs";
+// @import "public/bower_components/foundation/scss/foundation/components/tooltips";
+// @import "public/bower_components/foundation/scss/foundation/components/top-bar";
+@import "public/bower_components/foundation/scss/foundation/components/type";
+@import "public/bower_components/foundation/scss/foundation/components/offcanvas";
+@import "public/bower_components/foundation/scss/foundation/components/visibility";

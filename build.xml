@@ -21,11 +21,11 @@
         <exec command="bower install" logoutput="yes"/>
     </target>
 
-    <target name="compass">
-        <echo msg="Compile styles with Compass..." />
-        <exec command="compass compile" logoutput="yes"/>
+    <target name="gulp">
+        <echo msg="Building styles and scripts with Gulp..." />
+        <exec command="gulp build" logoutput="yes"/>
     </target>
 
-    <target name="update" depends="composer, doctrine-proxies, bower, compass" />
+    <target name="update" depends="composer, doctrine-proxies, bower, gulp" />
 
 </project>

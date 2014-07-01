@@ -1,0 +1,67 @@
+@import "public/bower_components/foundation/scss/foundation/functions";
+
+$rem-base: 17px;
+
+$row-width: rem-calc(1600px);
+$column-gutter: rem-calc(50);
+
+//
+// TYPOGRAPHY
+//
+
+// $body-font-family: "apercuregular";
+$base-font-size: 17px;
+// $body-font-color: $black;
+// $include-html-type-classes: $include-html-classes;
+$include-open-sans: false;
+
+// We use these to control header font styles
+// $header-font-family: "raisonnedemibold";
+// $header-font-weight: 300;
+// $header-font-style: normal;
+// $header-font-color: $black;
+// $header-line-height: 1.4;
+// $header-top-margin: .2rem;
+// $header-bottom-margin: .5rem;
+// $header-text-rendering: optimizeLegibility;
+
+// We use these to control header font sizes
+// $h1-font-size: rem-calc(44);
+// $h2-font-size: rem-calc(37);
+// $h3-font-size: rem-calc(27);
+// $h4-font-size: rem-calc(23);
+// $h5-font-size: rem-calc(18);
+// $h6-font-size: 1rem;
+
+
+// $include-html-table-classes: $include-html-classes;
+
+// These control the background color for the table and even rows
+// $table-bg: #fff;
+// $table-even-row-bg: #f9f9f9  ;
+
+// These control the table cell border style
+// $table-border-style: solid;
+$table-border-size: 0;
+$table-border-color: #f9f9f9;
+// $table-border-color: #ddd;
+
+// These control the table head styles
+// $table-head-bg: #f5f5f5  ;
+$table-head-font-size: rem-calc(16);
+// $table-head-font-color: #222;
+$table-head-font-weight: normal;
+// $table-head-padding: rem-calc(8 10 10);
+
+// These control the row padding and font styles
+$table-row-padding: rem-calc(10 12);
+$table-row-font-size: rem-calc(16);
+// $table-row-font-color: #222;
+// $table-line-height: rem-calc(18);
+
+// These are for controlling the display and margin of tables
+// $table-display: table-cell;
+// $table-margin-bottom: rem-calc(20);
+
+
+$topbar-link-font-size: rem-calc(17);
