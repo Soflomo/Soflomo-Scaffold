@@ -8,19 +8,18 @@ var uglify       = require('gulp-uglify');
 var notify       = require("gulp-notify");
 
 gulp.task('sass', function(){
-    gulp.src(['public/styles/scss/styles.scss','public/styles/scss/ie.scss'])
+    gulp.src(['public/styles/scss/styles.scss','public/styles/scss/ie.scss', 'public/styles/scss/admin/admin.scss'])
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
         .pipe(sass())
-        .pipe(prefix('last 2 versions', "ie 9"))
-        .pipe(gulp.dest('public/styles/css'));
+        .pipe(prefix('last 3 versions', "ie 9"))
+        .pipe(gulp.dest('public/styles/css'))
+        .pipe(browserSync.reload({stream:true}));
 });
 
 gulp.task('script', function(){
-        gulp.src('public/scripts/src/*.js')
-            .pipe(uglify({
-                outSourceMap: true
-            }))
-            .pipe(gulp.dest('public/scripts/dist'));
+    gulp.src('public/scripts/src/*.js')
+        .pipe(gulp.dest('public/scripts/dist'))
+        .pipe(browserSync.reload({stream:true, once: true}));
 });
 
 gulp.task('browser-sync', function() {
@@ -33,7 +32,7 @@ gulp.task('browser-sync', function() {
         'module/**/*.phtml',
         'module/**/*.php'
     ], {
-        proxy: 'project-name.dev',
+        proxy: 'ella.dev',
         ghostMode: false,
         notify: false,
         open: false
@@ -41,12 +40,12 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('build', function(){
-    gulp.src(['public/styles/scss/styles.scss','public/styles/scss/ie.scss'])
+    gulp.src(['public/styles/scss/styles.scss','public/styles/scss/ie.scss', 'public/styles/scss/admin/admin.scss'])
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(prefix('last 2 versions', "ie 9"))
         .pipe(gulp.dest('public/styles/css'));
 
-    gulp.src('public/scripts/*.js')
+    gulp.src('public/scripts/src/*.js')
         .pipe(uglify())
         .pipe(gulp.dest('public/scripts/dist'));
 });
